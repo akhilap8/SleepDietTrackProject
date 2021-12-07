@@ -9,9 +9,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SleepPage"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        android:layout_marginTop="20dp"
+        android:text="SLEEP"
+        android:textColor="@color/black"
+        android:id="@+id/sleepText"
+        android:textSize="30dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addSleepData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_add"
+        app:rippleColor="#FFF"/>
 
     <Button
         android:id="@+id/toHome"
@@ -32,5 +46,38 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:text="Diet" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sleepText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text="Today"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sleepText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="300dp"
+        android:text="hours of sleep"
+        android:textColor="@color/black"
+        android:id="@+id/textViewHours"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle"
+        tools:progress="75"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp" />
+
 
 </RelativeLayout>

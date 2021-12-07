@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SleepDietTracker">
         <activity
+            android:name=".AddSleep"
+            android:exported="true" />
+        <activity
             android:name=".DietActivity"
             android:exported="true" />
         <activity
